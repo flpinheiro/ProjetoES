@@ -2,6 +2,8 @@
 
 This plan consist of the entire project plan to construct all the Group work home of the discipline Software engineer proposed by Fernando Antonio De Araujo Chacon from computer Science Department of University of Brasília (UnB).
 
+This project is Licenced by Apache License.
+
 # Project organization
 
 See also [https://github.com/flpinheiro/ProjetoES](https://github.com/flpinheiro/ProjetoES)
