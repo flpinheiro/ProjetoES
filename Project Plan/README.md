@@ -1,7 +1,3 @@
-**Open Rent**
-
-**Project Plan**
-
 # Introduction
 
 This plan consist of the entire project plan to construct all the Group work home of the discipline Software engineer proposed by Fernando Antonio De Araujo Chacon from computer Science Department of University of Brasília (UnB).
@@ -33,23 +29,18 @@ Progress is tracked using two primary measurements using a point system. It is e
 
 # Project milestones and objectives
 
-| **Iteration** | **Primary objectives** (risks and use case scenarios) | **Scheduled start or milestone** | **Target velocity** |
-| --- | --- | --- | --- |
-| I1 | Objectives
-1. Project Plan
-2. Iteration Plan 1
- | 25/02/2021 to 04/03/2021 | 7 |
-| I2 | Objectives
-1. Iteration Plan 2
-2. Use-case Model
-3. Architecture Notebook
-4. Smoke Test
-5. Glossary
- | 05/03/2021 to 12/03/2021 | 7 |
+| Iteration | Primary objectives            | milestone                | Target velocity |
+|-----------|-------------------------------|--------------------------|-----------------|
+| I1        | Objectives                    | 25/02/2021 to 04/03/2021 | 7               |
+|           | 1.      Project Plan          |                          |                 |
+|           | 2.      Iteration Plan 1      |                          |                 |
+| I2        | Objectives                    | 05/03/2021 to 12/03/2021 | 7               |
+|           | 1.      Iteration Plan 2      |                          |                 |
+|           | 2.      Use-case Model        |                          |                 |
+|           | 3.      Architecture Notebook |                          |                 |
+|           | 4.      Smoke Test            |                          |                 |
+|           | 5.      Glossary              |                          |                 |
 
 # Deployment
 
 # Lessons learned
-
-| Confidential | ©Eclipse Process Framework, 2008 | Page 0 of 1 |
-| --- | --- | --- |
