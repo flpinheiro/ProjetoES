@@ -61,7 +61,7 @@ inferior ao valor de aluguel mínimo aceito pelo proprietário.
 
 1. Descrição do processo a ser seguido no projeto que resultará nos artefatos (project defined process).
 2. Plano do projeto (project plan).
-3. Planos das iterações (iteraction plan).
+3. Planos das iterações (iteration plan).
 4. Lista de ferramentas (tools) .
 5. Glossário (glossary).
 6. Documento de visão (vision).
