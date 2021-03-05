@@ -1,38 +1,7 @@
-\documentclass[a4paper,notitlepage]{article}%
-%Options -- Point size:  10pt (default), 11pt, 12pt
-%        -- Paper size:  letterpaper (default), a4paper, a5paper, b5paper
-%                        legalpaper, executivepaper
-%        -- Orientation  (portrait is the default)
-%                        landscape
-%        -- Print size:  oneside (default), twoside
-%        -- Quality      final(default), draft
-%        -- Title page   notitlepage, titlepage(default)
-%        -- Columns      onecolumn(default), twocolumn
-%        -- Equation numbering (equation numbers on the right is the default)
-%                        leqno
-%        -- Displayed equations (centered is the default)
-%                        fleqn (equations start at the same distance from the right side)
-%        -- Open bibliography style (closed is the default)
-%                        openbib
-% For instance the command
-%           \documentclass[a4paper,12pt,leqno]{article}
-% ensures that the paper size is a4, the fonts are typeset at the size 12p
-% and the equation numbers are on the left side
-%
-\usepackage{amsmath}%
-\usepackage{amsfonts}%
-\usepackage{amssymb}%
-\usepackage{graphicx}
-\usepackage{adjustbox}
+\clearpage
+\section*{Sprit }
 
-\begin{document}
-
-\title{Iteration Plan}
-\author{Open Rent}
-\date{Sprit }
-\maketitle
-
-\section{Key Milestone}
+\subsection*{Key Milestone}
 
 [Key dates showing timelines, such as start and end date; intermediate milestones; synchronization points with other teams; demos; and so on for the iteration.]
 
@@ -45,7 +14,7 @@ Iteration start &      \\ \hline
 Iteration stop  &      \\ \hline
 \end{tabular}
 
-\section{High-level objectives}
+\subsection*{High-level objectives}
 
 [List the key objectives for the iteration, typically one to five. Examples follow.]
 \begin{itemize}
@@ -54,9 +23,9 @@ Iteration stop  &      \\ \hline
 	\item	Present a technical demonstration (demo).
 \end{itemize}
 
-\section{Work Item assignments}
+\subsection*{Work Item assignments}
 
-[This section should reference either the Work Items List, which provides information about what Work Items are to be addressed in which iteration by whom, or specifically call out the Work Items Lists to address in this iteration. The preferred solution depends on whether or not it is trivial for team members to find the subset of all Work Items that are assigned to the iteration by using search methods, rather than the Iteration Plan.]
+[This subsection* should reference either the Work Items List, which provides information about what Work Items are to be addressed in which iteration by whom, or specifically call out the Work Items Lists to address in this iteration. The preferred solution depends on whether or not it is trivial for team members to find the subset of all Work Items that are assigned to the iteration by using search methods, rather than the Iteration Plan.]
 
 Please see the Work Items List for Work Items to be addressed in this iteration.
 or
@@ -72,7 +41,7 @@ Name & Priority & Size estimate (points) & State & Reference material & Target i
 \end{tabular}
 \end{adjustbox}
 
-\section{Issues}
+\subsection*{Issues}
 
  [List any issues to be solved during the iteration. Update status when new issues are reported during the daily meetings]
 
@@ -85,7 +54,7 @@ Issue & Status & Notes \\
 \hline
 \end{tabular}
 
-\section{Evaluation criteria}
+\subsection*{Evaluation criteria}
 
 [A brief description of how to evaluate whether the high-level objectives were met. Examples follow.]
 
@@ -95,9 +64,9 @@ Issue & Status & Notes \\
 	\item Favorable response to technical demo.
 \end{itemize}
 
-\section{Assessment}
+\subsection*{Assessment}
 
-[Use this section for capturing and communicating results and actions from assessments, which are typically done at the end of each iteration. If you don’t do this, the team may not be able to improve the way they develop software.]
+[Use this subsection* for capturing and communicating results and actions from assessments, which are typically done at the end of each iteration. If you don’t do this, the team may not be able to improve the way they develop software.]
 
 \noindent\begin{tabular}{|l|l|}
 \hline
@@ -107,14 +76,14 @@ Participants & \\\hline
 Project Status & [For example, express as Red, Yellow, or Green.]\\\hline
 \end{tabular}
 
-\subsection{ Assessment against objectives}
+\subsubsection*{ Assessment against objectives}
 [Document whether you addressed the objectives as specified in the Iteration Plan.]
-\subsection{	Work Items: Planned compared to actually completed}
+\subsubsection*{	Work Items: Planned compared to actually completed}
 [Summarize whether all Work Items planned to be addressed in the iteration were addressed, and which Work Items were postponed or added.]
-\subsection{Assessment against Evaluation Criteria Test results}
+\subsubsection*{Assessment against Evaluation Criteria Test results}
 [Document whether you met the evaluation criteria as specified in the Iteration Plan. This could include information such as “Demo for Department X was well-received, with some concerns raised around usability,” or “495 test cases were automated with a 98\% pass rate. 9 test cases were deferred because the corresponding Work Items were postponed.”]
-\subsection{	Other concerns and deviations}
+\subsubsection*{	Other concerns and deviations}
 [List other areas that have been evaluated, such as financials, or schedule deviation, as well as Stakeholder feedback not captured elsewhere.]
 
 
-\end{document}
+
