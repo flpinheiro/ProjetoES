@@ -1,0 +1,128 @@
+The following tests are divided into 4 categories:
+\begin{enumerate}
+    \item Log in system tests
+    \item Property tests
+    \item Bid tests
+    \item General Services
+\end{enumerate}
+
+\section*{1.1 – Can create user}
+\begin{description}
+    \item[Description]: A properly filled sign up form is submitted. It’s expected that a new user’s account gets created on the database.
+    \item[Pre-conditions]: There must be no other account with the same email on the database.
+    \item[Post-conditions]: All of the new account’s information should be inserted on the database and the user should be able to log in with them.
+    \item[Data required]: Valid email, phone number, name and password.
+\end{description}
+
+\section*{1.2 – Can log in}
+\begin{description}    
+    \item[Description]: A properly filled sign in form is submitted. It’s expected that the authenticated user can now access his account’s information.
+    \item[Pre-conditions]: There must be an existing account on the database to log in.
+    \item[Post-conditions]: The user should be now authenticated and should be able to use the system’s services.
+    \item[Data required]: Registered account with valid email, phone number, name and password.
+\end{description}
+
+\section*{1.3 – Can delete account}
+\begin{description}
+
+    \item[Description]: An authenticated user tries to delete his account. It’s expected that the user’s information gets deleted from the database along with all associated bids and registered properties.
+    \item[Pre-conditions]: There must be an authenticated user and whose account information is properly registered with the bank
+    \item[Post-conditions]: There should be nothing left from that user on the database.
+    \item[Data required]: Registered account with valid email, phone number, name and password, there may be bids or properties associated with the account.
+\end{description}
+
+\section*{2.1 - Can register property}
+\begin{description}
+    \item[Description]: An authenticated user submits a properly completed property registration form. A new property is created in the database associated with that user.
+    \item[Pre-conditions]: The user must be authenticated and must provide every information on the property registration form.
+    \item[Post-conditions]: A new property and its details should be created in the database.
+    \item[Data required]: Property class, description, address, maximum number of guests, start date of the availability period, end date of the availability period, and minimum daily rate.
+\end{description}
+
+\section*{2.2 – Can delete property}
+\begin{description}
+    \item[Description]: An authenticated user tries to delete a property registered by him. That property and its associated bids should be deleted from the database.
+    \item[Pre-conditions]: The authenticated user must have a registered property.
+    \item[Post-conditions]: The property and its associated proposals should have been excluded from the database.
+    \item[Data required]: Previously registered property.
+\end{description}
+
+\section*{2.3 – Can edit property details}
+\begin{description}
+    \item[Description]: An user tries to edit the details of one of its properties. The database should be updated with the new data.
+    \item[Pre-conditions]: The authenticated user must have a registered property.
+    \item[Post-conditions]: The property and its details should have been updated on the database.
+    \item[Data required]: Previously registered property.
+\end{description}
+
+
+\section*{2.4 – Can list associated bids}
+\begin{description}
+    \item[Description]: An authenticated user tries to list every bid associated with his property.
+    \item[Pre-conditions]: The authenticated user must have a registered property and at least one associated bid.
+    \item[Post-conditions]: A list of bids should be displayed.
+    \item[Data required]: Previously registered property with at least one associated bid.
+         
+\end{description}
+
+\section*{2.4.1 – Can see bids details}
+
+\begin{description}
+    \item[Description]: An authenticated user tries to see the details of one bid associated with his property. A list with those details should be shown.
+    \item[Pre-conditions]: Test 2.4 must have been successful.
+    \item[Post-conditions]: The bid’s details should be displayed.
+    \item[Data required]: Previously registered property with at least one associated bid.
+\end{description}
+
+\section*{3.1 – Can register proposal}
+
+\begin{description}
+    \item[Description]: An authenticated user submits a properly completed proposal registration form associated to a property. A new proposal associated to that property should be created in the database.
+    \item[Pre-conditions]: The user must be authenticated and must provide every information on the proposal registration form.
+    \item[Post-conditions]: A new associated proposal should be created in the database.
+    \item[Data required]: Rental period start date, rental period end date, guests number, proposed daily rate.
+\end{description}
+
+\section*{3.2 – Can list proposals}
+
+\begin{description}
+    \item[Description]: An authenticated user tries to list his registered proposals. A list of proposals should be displayed.
+    \item[Pre-conditions]: The authenticated user must have a registered proposal.
+    \item[Post-conditions]: A list of proposals should be displayed.
+    \item[Data required]: Previously registered proposal.
+\end{description}
+
+\section*{3.2.1 – Can see proposal details}
+\begin{description}
+    \item[Description]: A authenticated user tries to see the details of one his registered proposals. A list with those details should be shown.
+    \item[Pre-conditions]: Test 3.2 must have been successful.
+    \item[Post-conditions]: A list with the proposal details should be displayed.
+    \item[Data required]: Previously registered proposal.
+\end{description}
+
+\section*{3.2.2 – Can delete proposal}
+
+\begin{description}
+    \item[Description]: An authenticated user tries to delete one of his registered proposals. That proposal and its details should be excluded from the database.
+    \item[Pre-conditions]: The authenticated user must have a registered proposal.
+    \item[Post-conditions]: There should be no more data about that proposal in the database.
+    \item[Data required]: Previously registered proposal.
+\end{description}
+
+\section*{4.1 – Can list properties}
+\begin{description}
+    \item[Description]: An user tries to list all properties. It’s expected that a list of properties gets displayed.
+    \item[Pre-conditions]: There must be at least one property registered in the system.
+    \item[Post-conditions]: A list of properties is shown.
+    \item[Data required]: Previously registered properties.     
+\end{description}
+
+\section*{4.1.1 – Can see property details}
+
+\begin{description}
+    \item[Description]: An user tries to see a property details. A list of those details should be displayed.
+    \item[Pre-conditions]: Test 4.1 must have been successful.
+    \item[Post-conditions]: A list of details should be displayed.
+    \item[Data required]: Previously registered property.
+\end{description}
+

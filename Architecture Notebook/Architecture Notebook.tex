@@ -1,0 +1,28 @@
+\section*{Purpose}
+
+Este processo de elaboração de software tem como filosofia a assertividade, velocidade, a boa qualidade, cumprimento de prazos estipulados, cumprimento integral das atividades delegadas para os colaboradores, além da eficiência e eficácia.
+
+Foi decidido separar todo o desenvolvimento para os quatro colaboradores deste projeto, cada um com funções definidas, há um gerente de projeto, um arquiteto de software, um analista e um testador, com algumas restrições, todos devem se ajudar de acordo com o possível, porém sem que isso interfira no seu trabalho e sem tomar para si as tarefas de terceiros, buscando assim a maior velocidade e eficiência possível ao projeto a ser desenvolvido.
+
+Com isso, a ferramenta a ser desenvolvida tem o papel de facilitar o uso de anunciamento de aluguéis, negociações e cobranças, com a apresentação de propostas e descrição dos imóveis.
+
+\section*{Architectural goals and philosophy}
+
+O objetivo é construir um software que preste suporte ao aluguel de imóveis, sendo que proprietários podem anunciar, com várias informações sobre o objeto em questão, o interessado pode fazer propostas e conversar diretamente com o proprietário. Este dois precisando ser autenticados para tais funções, contendo dados pessoais para a sua precisa identificação em caso de imprevistos.
+
+O software precisa ser capaz de entregar uma boa performance em qualquer dispositivo a ser utilizado, seja um computador potente ou fraco, uma vez que não é possível cobrar que o proprietário ou interessado tenha um bom hardware para executar o software, apenas requisitos mínimos, também deve ter um visual compreensivo, fácil de ser usado, moderno e leve, assim evitando engasgos à aplicação que poderiam ser evitados. É necessário também que o software seja capaz o suficiente para comportar futuras atualizações pedidas pelos usuários do serviços e que façam sentido a proposta da aplicação.
+
+Um problema que pode se tornar crítico é o de um proprietário ter várias propostas a se analisar e também muitos imóveis já alugados, é preciso fazer com que seja facilitada a visualização dos imóveis de maneira sucinta, para que possa se identificar de pronto de qual imóvel se trata e qual a condição dele.
+
+\section*{Architectural Mechanisms}
+
+É necessário também a identificação de mecanismos arquitetônicos, que nada mais são que soluções comuns para problemas comuns.
+
+1 - Uma boa listagem de imóveis.
+
+É necessário que os imóveis listados sejam adequados para os interessados, com base na sua pretensão de pagamento, localização do interessado e do imóvel, se tem estrutura para crianças ou para animais domésticos, no geral, suporte a filtros pré-aplicados.
+
+2 - Visualização do preço do aluguel
+
+Omitir do interessado o preço mínimo do aluguel informado pelo proprietário, e exibir apenas o desejado, se não há motivos para o interessado oferecer mais do que o mínimo, e então, assim, o proprietário só teria propostas com o valor mínimo, tornando a negociação bastante prejudicada.
+
