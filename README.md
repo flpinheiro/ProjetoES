@@ -58,20 +58,20 @@ inferior ao valor de aluguel mínimo aceito pelo proprietário.
 
 ## ARTEFATOS A SEREM CONSTRUÍDOS E ENTREGUES
 
-1. Descrição do processo a ser seguido no projeto que resultará nos artefatos (project defined process).
-2. Plano do projeto (project plan).
-3. Planos das iterações (iteration plan).
-4. Lista de ferramentas (tools) .
-5. Glossário (glossary).
+1. Descrição do processo a ser seguido no projeto que resultará nos artefatos (project defined process). OK
+2. Plano do projeto (project plan). OK
+3. Planos das iterações (iteration plan). OK
+4. Lista de ferramentas (tools).
+5. Glossário (glossary). OK
 6. Documento de visão (vision).
 7. Descrições de requisitos que não sejam expressos por meio de casos de uso (system-wide requirements).
-8. Modelo de casos de uso (use-case model) .
+8. Modelo de casos de uso (use-case model) . OK
 9. Descrições detalhadas dos casos de uso (use case).
-10. Descrição da arquitetura do software (architecture notebook).
+10. Descrição da arquitetura do software (architecture notebook). OK
 11. Projeto de interface com o usuário.
 12. Projeto físico de banco de dados.
 13. Descrição da infraestrutura de implantação (infrastructure).
-14. Teste fumaça (smoke test) composto por casos de teste (test cases).
+14. Teste fumaça (smoke test) composto por casos de teste (test cases). OK
 15. Protótipo de interface com o usuário.
 16. Protótipo de banco de dados.
 
