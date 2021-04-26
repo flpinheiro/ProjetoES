@@ -1,0 +1,57 @@
+\section{editar dados de imóvel}
+
+\subsection*{Brief Description}
+Este caso de uso descreve como os proprietários podem alterar os dados dos imóveis
+cadastrados.
+
+\subsection*{Actors}
+
+\begin{itemize}
+    % \item \textbf{Interessados}
+    \item \textbf{Proprietários}
+\end{itemize}
+
+\subsection*{Preconditions}
+O proprietário deve ter imóveis cadastrados.
+
+\subsection*{Basic Flow of Events}
+
+\begin{enumerate}
+    \item  O proprietário acessa a lista de imóveis cadastrados da sua conta.
+    \item O proprietário escolhe o imóvel do qual deseja editar os dados e seleciona a opção referente à
+    edição de dados
+    \item O proprietário escolhe quais dados deseja alterar (classe do imóvel, descrição, endereço, número
+    máximo de hóspedes, data inicial do período de disponibilidade, data final do período de
+    disponibilidade e valor mínimo de diária).
+    \item O sistema pede para que o proprietário confirme sua senha para confirmar sua identidade.
+    \item O proprietário informa sua senha.
+    \item O sistema atualiza os novos dados do respectivo imóvel.
+\end{enumerate}
+
+\subsection*{Alternative Flows}
+
+\textbf{Dados inválidos}
+
+Caso algum dos novos dados informados não seja válido, o sistema informa o dado que está
+incorreto e pede para que o proprietário o-corrija.
+
+\textbf{Senha inválida}
+
+O sistema informa ao usuário que a senha fornecida não corresponde com a que foi criada no
+cadastro da conta, permitindo que ele informe a senha novamente.
+
+\subsection*{Post-conditions}
+
+\textbf{Dados editados com sucesso}
+
+Se a ação ocorrer corretamente, o sistema informa ao proprietário que os dados foram
+corretamente alterados e permite que ele retorne à lista de imóveis.
+
+\textbf{Falha ao editar dados}
+
+Caso algum erro inesperado aconteça o sistema informa ao proprietário que houve um erro e
+reinicia a operação de edição de dados.
+
+\subsection*{Special Requirements} 
+O sistema deve manter o histórico de atividades dos usuários, incluindo o dia e o horário em que
+os dados foram alterados.

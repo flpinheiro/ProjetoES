@@ -1,0 +1,56 @@
+\section{Autenticar usuário}
+
+\subsection*{Brief Description}
+Este caso descreve como o proprietário deve prover os dados de seus imóveis que serão
+anunciados.
+
+\subsection*{Actors}
+
+\begin{itemize}
+    % \item \textbf{Interessados}
+    \item \textbf{Proprietários}
+\end{itemize}
+
+\subsection*{Preconditions}
+O usuário deve ter a conta autenticada no sistema.
+
+\subsection*{Basic Flow of Events}
+
+\begin{enumerate}
+    \item O usuário seleciona a opção referente a cadastrar um imóvel.
+    \item O sistema pede para que sejam fornecidos os seguintes dados do imóvel: classe do imóvel
+    (apartamento, casa ou quarto), descrição, endereço, número máximo de hóspedes, data inicial do
+    período de disponibilidade, data final do período de disponibilidade e valor de diária mínimo.
+\end{enumerate}
+
+\subsection*{Alternative Flows}
+
+\textbf{usuário não autenticado}
+
+O sistema oferece as opções de redirecionar o usuário para a página de autenticação ou para a
+página inicial.
+
+\textbf{Endereço inválido}
+
+O sistema informa que o endereço fornecido não é válido e pede para que o mesmo seja corrigido.
+
+\textbf{Limite de imóveis cadastrados}
+
+Cada usuário pode cadastrar apenas 5 imóveis, caso o usuário tente cadastrar um sexto imóvel o
+sistema informa que não é possível completar a ação e retorna o usuário para a página inicial.
+
+\subsection*{Post-conditions}
+
+\textbf{Imóvel cadastrado com sucesso}
+
+Se o usuário consegue cadastrar o imóvel com sucesso o sistema o-redireciona para a página de
+consulta deste imóvel.
+
+\textbf{Falha ao cadastrar imóvel}
+
+Caso algum erro inesperado aconteça o sistema reinicia a operação de cadastro de imóveis.
+
+
+\subsection*{Special Requirements} 
+O sistema deve manter o histórico de atividades dos usuários, incluindo o dia e o horário em que
+acessaram o sistema.

@@ -1,0 +1,53 @@
+\section{descadastrar conta}
+
+\subsection*{Brief Description}
+
+Este caso descreve como os usuários podem descadastrar uma conta autenticada.
+\subsection*{Actors}
+
+\begin{itemize}
+    \item \textbf{Interessados}
+    \item \textbf{Proprietários}
+\end{itemize}
+
+\subsection*{Preconditions}
+O usuário deve ter a conta autenticada no sistema.
+
+\subsection*{Basic Flow of Events}
+
+\begin{enumerate}
+    \item  O usuário seleciona a opção referente a descadastrar sua conta.
+    \item O sistema pede para que o usuário informe seu endereço de e-mail e sua senha para
+    confirmar a identidade do usuário.
+    \item O usuário informa os dados pedidos.
+    \item O sistema remove a autenticação da conta do usuário.
+    \item O sistema apaga os imóveis e as propostas cadastradas pelo usuário.
+    \item O usuário é levado de volta para a página inicial.
+\end{enumerate}
+
+\subsection*{Alternative Flows}
+
+\textbf{E-mail ou senha incorretos}
+
+O sistema informa ao usuário que seus dados estão incorretos e não permite que a operação
+de descadastro aconteça até que os dados sejam inseridos corretamente.
+
+\textbf{Usuário não possui imóveis ou propostas de aluguel ativas}
+
+O sistema informa que não existem imóveis ou propostas de aluguel para serem removidos, e
+apenas remove a autenticação do usuário.
+
+\subsection*{Post-conditions}
+
+\textbf{Conta descadastrada com sucesso}
+
+Se o usuário consegue descadastrar sua conta com sucesso o sistema o-redireciona para a
+página inicial.
+
+\textbf{Falha ao descadastrar conta}
+
+Caso algum erro inesperado aconteça, o sistema reinicia a operação de descadastro de
+conta.
+\subsection*{Special Requirements} 
+O sistema deve manter o histórico de atividades dos usuários, incluindo a data e o horário em
+que eles realizaram o descadastramento de conta

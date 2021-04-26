@@ -1,0 +1,45 @@
+\section{ listar imóveis disponíveis}
+
+\subsection*{Brief Description}
+
+Este caso de uso descreve como os interessados veem a lista de imóveis disponíveis para suas
+propostas.
+
+\subsection*{Actors}
+
+\begin{itemize}
+    \item \textbf{Interessados}
+    \item \textbf{Proprietários}
+\end{itemize}
+
+\subsection*{Preconditions}
+ 
+O usuário deve ter acesso ao sistema.
+
+\subsection*{Basic Flow of Events}
+
+\begin{enumerate}
+    \item O Interessado seleciona a opção referente à listar os imóveis disponíveis oferecidos pelos
+    proprietários.
+    \item O sistema pede para que o Interessado escolha a classe do imóvel e a data inicial e final do
+    período de disponibilidade.
+    \item O Interessado fornece as informações requeridas.
+    \item  O sistema lista todas as possibilidades de imóveis com base nos requisitos do Interessado.
+\end{enumerate}
+
+\subsection*{Alternative Flows}
+
+\textbf{Imóveis não encontrados}
+
+O sistema avisa que não foram encontrados imóveis disponíveis com os requisitos informados pelo
+Interessado e retorna para a tela anterior.
+
+\subsection*{Post-conditions}
+
+\textbf{Imóveis encontrados com sucesso}
+
+O sistema permite que o interessado clique visualize os dados dos imóveis encontrados na lista.
+
+\subsection*{Special Requirements} 
+
+O sistema deve manter o histórico de busca de imóveis dos usuários.

@@ -1,0 +1,49 @@
+\section{editar dados da conta}
+
+\subsection*{Brief Description}
+Este caso descreve como os usuários podem alterar os dados da conta autenticada.
+
+\subsection*{Actors}
+
+\begin{itemize}
+    \item \textbf{Interessados}
+    \item \textbf{Proprietários}
+\end{itemize}
+
+\subsection*{Preconditions}
+O usuário deve ter a conta autenticada no sistema.
+
+\subsection*{Basic Flow of Events}
+
+\begin{enumerate}
+    \item  O usuário seleciona a opção referente a editar os dados da sua conta.
+    \item O sistema oferece as opções de edição para o nome, telefone, senha e endereço de e-mail.
+    \item O usuário escolhe a opção que deseja editar.
+    \item O sistema pede para que o usuário digite a alteração que deseja fazer.
+    \item O sistema envia um e-mail para o endereço de e-mail cadastrado até então pelo usuário para
+    que ele confirme a operação.
+    \item O usuário realiza a confirmação por meio de seu endereço de e-mail.
+    \item O sistema atualiza e registra os novos dados do usuário.
+\end{enumerate}
+
+\subsection*{Alternative Flows}
+
+\textbf{E-mail inválido}
+
+Caso o novo endereço de e-mail adicionado pelo usuário não seja válido, o sistema informa o
+erro ao usuário e pede para que ele digite um outro endereço de e-mail.
+
+
+\subsection*{Post-conditions}
+
+\textbf{Alterações realizadas com sucesso}
+Se o usuário consegue editar os dados da sua conta com sucesso o sistema o-informa que os
+dados foram alterados e o-redireciona para a página inicial.
+
+
+\textbf{Falha ao editar os dados}
+Caso algum erro inesperado aconteça, o sistema reinicia a operação de edição de dados.
+
+\subsection*{Special Requirements} 
+O sistema deve manter o histórico de atividades dos usuários, incluindo a data e o horário em
+que eles realizaram as alterações dos dados da conta

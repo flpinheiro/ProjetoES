@@ -1,0 +1,52 @@
+\section{descadastrar proposta de aluguel}
+
+\subsection*{Brief Description}
+Este caso de uso descreve como os interessados podem descadastrar suas
+propostas de aluguel cadastradas.
+
+\subsection*{Actors}
+
+\begin{itemize}
+    \item \textbf{Interessados}
+    % \item \textbf{Proprietários}
+\end{itemize}
+
+\subsection*{Preconditions}
+O interessado deve ter alguma proposta de aluguel cadastrada no sistema.
+
+\subsection*{Basic Flow of Events}
+
+\begin{enumerate}
+    \item  O interessado seleciona a opção relacionada à visualizar sua lista de propostas de aluguel.
+    \item O sistema mostra uma lista com todas as propostas de aluguel cadastradas pelo
+    interessado.
+    \item O interessado seleciona a proposta ao qual deseja descadastrar.
+    \item O sistema requisita que o interessado forneça a senha de sua conta cadastrada para
+    confirmar sua identidade.
+    \item O sistema confirma a senha do interessado e realiza o descadastro da respectiva
+    proposta.
+\end{enumerate}
+
+\subsection*{Alternative Flows}
+
+\textbf{Senha inválida}
+
+Caso a senha fornecida seja inválida, o sistema pede para que o interessado forneça a senha
+novamente.
+
+
+\subsection*{Post-conditions}
+
+\textbf{Proposta de aluguel descadastrada com sucesso}
+
+Caso o procedimento ocorra corretamente, o sistema informa ao interessado que a proposta de
+aluguel foi descadastrada e permite que ele retorne à sua lista de propostas ainda cadastradas.
+
+\textbf{Erro ao descadastrar proposta de aluguel}
+
+Caso algum erro inesperado aconteça, o sistema reinicia a operação de descadastrar propostas
+de aluguel.
+
+\subsection*{Special Requirements} 
+O sistema deve manter o histórico de atividades dos usuários, incluindo a data e o horário em que
+os interessados descadastraram as suas propostas.

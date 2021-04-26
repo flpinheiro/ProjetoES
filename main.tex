@@ -4,6 +4,10 @@
 \usepackage[utf8]{inputenc}
 \usepackage{adjustbox}
 
+\usepackage[toc]{glossaries}
+\makeglossaries
+\input{Glossary/Glossary.tex}
+
 \title{Open Rent}
 \author{
     Andrey Calaca Resende \footnote{https://github.com/andreyresende} - 180062433\\
@@ -34,7 +38,12 @@
 \chapter{Architecture Notebook}
 \import{./Architecture Notebook}{Architecture Notebook.tex}
 
+\chapter{Use Case}
+\import{./Use Case}{Use Case Model.tex}
+
 \chapter{Smoke test}
 \import{./Smoke test}{Smoke test.tex}
+
+\printglossary
 
 \end{document}

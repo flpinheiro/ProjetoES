@@ -1,0 +1,45 @@
+\section{apresentar dados de imóvel}
+
+\subsection*{Brief Description}
+Este caso de uso descreve como os interessados veem os dados a respeito do imóvel desejado.
+
+\subsection*{Actors}
+
+\begin{itemize}
+    \item \textbf{Interessados}
+    \item \textbf{Proprietários}
+\end{itemize}
+
+\subsection*{Preconditions}
+ 
+Devem ter sido encontrados imóveis disponíveis de acordo com os requisitos desejados pelo
+Interessado.
+
+\subsection*{Basic Flow of Events}
+
+\begin{enumerate}
+    \item O Interessado seleciona o imóvel desejado entre os disponíveis na lista de imóveis encontrados.
+    \item O sistema fornece os dados que foram fornecidos pelo Proprietário do imóvel.
+    \item O Interessado confirma que tem interesse em alugar o determinado imóvel.
+    \item O sistema solicita que o Interessado esteja autenticado.
+    \item  O Interessado se autentica e cadastra uma proposta de aluguel.
+\end{enumerate}
+
+\subsection*{Alternative Flows}
+
+\textbf{O Interessado não tem interesse no imóvel}
+
+O sistema permite que o Interessado retorne à página inicial.
+\textbf{O Interessado não é autenticado.}
+O sistema impede que o Interessado cadastre uma proposta de aluguel até que ele realize a
+autenticação.
+
+\subsection*{Post-conditions}
+
+\textbf{Proposta de aluguel cadastrada}
+A nova proposta de aluguel do Interessado é cadastrada e pode ser verificada pelo proprietário do
+imóvel.
+
+
+\subsection*{Special Requirements} 
+O sistema deve manter o histórico de imóveis visualizados pelos Interessados.

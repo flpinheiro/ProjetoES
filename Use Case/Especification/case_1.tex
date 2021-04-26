@@ -1,0 +1,54 @@
+\section{Autenticar Usuário}
+
+\subsection*{Brief Description}
+
+Este caso de uso descreve como os usuários devem se autenticar para utilizar todas
+as funcionalidades do software.
+
+\subsection*{Actors}
+
+
+\begin{itemize}
+    \item \textbf{Interessados}
+    \item \textbf{Proprietários}
+\end{itemize}
+
+\subsection*{Preconditions}
+ 
+O usuário deve ter uma conta cadastrada..
+
+\subsection*{Basic Flow of Events}
+
+\begin{enumerate}
+    \item O usuário seleciona a opção referente à autenticação de usuário.
+    \item O usuário fornece seu endereço de e-mail.
+    \item O usuário digita sua senha.
+\end{enumerate}
+
+\subsection*{Alternative Flows}
+
+\textbf{E-mail inválido}
+
+O sistema verifica que o endereço de e-mail fornecido pelo usuário não é válido e informa o usuário
+sobre o problema, permitindo que ele digite o endereço de e-mail novamente.
+
+\textbf{Senha inválida}
+
+O sistema informa ao usuário que a senha fornecida não corresponde com a que foi criada no
+cadastro da conta, permitindo que ele informe a senha novamente.
+
+\subsection*{Post-conditions}
+
+\textbf{Usuário autenticado com sucesso}
+
+Se o procedimento de autenticação ocorrer corretamente, o sistema informa ao usuário que sua
+conta está autenticada e lhe-sugere as possíveis opções referentes ao aluguel de imóveis.
+
+\textbf{Falha ao autenticar usuário}
+
+Caso algum erro inesperado aconteça o sistema reinicia a operação de autenticação de
+usuários..
+
+\subsection*{Special Requirements} 
+O sistema deve manter o histórico de atividades dos usuários, incluindo o dia e o horário em que a
+autenticação foi realizada..

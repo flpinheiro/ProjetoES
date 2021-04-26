@@ -1,0 +1,63 @@
+\section{cadastrar proposta de aluguel}
+
+\subsection*{Brief Description}
+Este caso de uso descreve como os interessados podem cadastrar propostas de
+aluguel.
+
+\subsection*{Actors}
+
+\begin{itemize}
+    \item \textbf{Interessados}
+    % \item \textbf{Proprietários}
+\end{itemize}
+
+\subsection*{Preconditions}
+O interessado deve ter uma conta cadastrada no sistema.
+
+\subsection*{Basic Flow of Events}
+
+\begin{enumerate}
+    \item  O interessado busca um imóvel que se encaixe nas suas preferências.
+    \item O interessado seleciona a opção relacionada à cadastrar uma proposta de aluguel para o
+    respectivo imóvel.
+    \item O sistema pede para que o interessado forneça os dados necessários para a realização
+    da proposta (período do aluguel, número de hóspedes, valor mínimo do aluguel).
+    \item O interessado fornece os dados pedidos.
+    \item O sistema realiza o cadastro da proposta e envia uma notificação sobre o cadastro para o
+    proprietário do imóvel.
+\end{enumerate}
+
+\subsection*{Alternative Flows}
+
+\textbf{Período inválido}
+
+Caso o período informado pelo interessado não corresponda ao período permitido fornecido
+pelo proprietário, o sistema avisa ao interessado que ele deve inserir um novo período que
+seja válido.
+
+\textbf{Número de hóspedes inválido}
+
+Caso o número de hóspedes informado seja maior que o número máximo fornecido pelo
+proprietário, o sistema avisa ao interessado que ele deve inserir um número inferior.
+
+\textbf{Valor inválido}
+
+Caso o valor oferecido pelo interessado seja inferior ao requisitado pelo proprietário, o
+sistema informa ao interessado que ele deve escolher um valor que corresponda ao valor
+mínimo.
+
+\subsection*{Post-conditions}
+
+\textbf{Proposta realizada com sucesso}
+
+Se a ação ocorrer corretamente, o sistema informa ao usuário que sua proposta de aluguel foi
+cadastrada e permite que ele retorne à lista de propostas alugadas.
+
+\textbf{Falha ao cadastrar proposta de aluguel}
+
+Caso algum erro inesperado aconteça o sistema reinicia a operação de cadastramento de
+proposta de aluguel.
+
+\subsection*{Special Requirements} 
+O sistema deve manter o histórico de atividades dos usuários, incluindo o dia e o horário em que
+realizaram o cadastro de uma proposta de aluguel.

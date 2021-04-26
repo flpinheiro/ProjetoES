@@ -1,0 +1,41 @@
+\section{apresentar dados de proposta de aluguel}
+
+\subsection*{Brief Description}
+Este caso de uso descreve como os interessados podem visualizar os dados de
+suas propostas de aluguel cadastradas.
+
+\subsection*{Actors}
+
+\begin{itemize}
+    \item \textbf{Interessados}
+    % \item \textbf{Proprietários}
+\end{itemize}
+
+\subsection*{Preconditions}
+O interessado deve ter alguma proposta de aluguel cadastrada no sistema.
+
+\subsection*{Basic Flow of Events}
+
+\begin{enumerate}
+    \item O interessado seleciona a opção relacionada à visualizar sua lista de propostas de aluguel.
+    \item O sistema mostra uma lista com todas as propostas de aluguel cadastradas pelo
+    interessado.
+    \item  O usuário seleciona a proposta ao qual deseja ver os dados.
+    \item  O sistema mostra os seguintes dados sobre a respectiva proposta selecionada: valor à
+    ser pago, período do aluguel e número de hóspedes.
+\end{enumerate}
+
+\subsection*{Alternative Flows}
+
+Sem alternative flows.
+
+\subsection*{Post-conditions}
+
+\textbf{Falha ao visualizar os dados da proposta de aluguel}
+
+Caso algum erro inesperado aconteça, o sistema reinicia a operação de visualizar os dados da
+proposta de aluguel.
+
+\subsection*{Special Requirements} 
+O sistema deve manter o histórico de atividades dos usuários, incluindo as últimas propostas de
+aluguel visualizadas.
